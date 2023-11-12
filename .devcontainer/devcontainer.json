@@ -1,0 +1,45 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
+  "runArgs": ["--privileged", "--init"],
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "overrideCommand": true,
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.renderWhitespace": "all",
+        "[js][jsx][ts][tsx]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+          }
+        },
+        "[json][jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true
+          }
+        }
+      },
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "tamasfe.even-better-toml",
+        "esbenp.prettier-vscode",
+        "ms-vscode.live-server",
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  }
+}
