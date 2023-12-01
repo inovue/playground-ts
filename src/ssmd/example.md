@@ -312,3 +312,23 @@ Andrew->>China: I am good thanks!
 ```
 
 ###End
+
+
+###Comments
+
+<!-- 
+
+--- 
+
+~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
+_Italic_ _Italic_
+**Emphasis** **Emphasis**
+**_Emphasis Italic_** **_Emphasis Italic_**
+
+Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
+
+**Abbreviation(link HTML abbr tag)**
+
+The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
+
+-->

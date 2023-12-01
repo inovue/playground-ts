@@ -1,0 +1,351 @@
+<h3>Features</h3>
+<ul>
+<li>Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);</li>
+<li>Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;</li>
+<li>Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;</li>
+<li>Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;</li>
+<li>Support identification, interpretation, fliter of the HTML tags;</li>
+<li>Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;</li>
+<li>Support AMD/CMD (Require.js &#x26; Sea.js) Module Loader, and Custom/define editor plugins;</li>
+</ul>
+<h1>Editor.md</h1>
+<p><img src="https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png" alt=""></p>
+<p><img src="https://img.shields.io/github/stars/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/forks/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/tag/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/release/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/issues/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/bower/v/editor.md.svg" alt=""></p>
+<p><strong>Table of Contents</strong></p>
+<p>[TOCM]</p>
+<p>[TOC]</p>
+<p>#H1 header
+##H2 header
+###H3 header
+####H4 header
+#####H5 header
+######H6 header
+#Heading 1 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a>
+##Heading 2 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a>
+###Heading 3 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a>
+####Heading 4 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a> Heading link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a>
+#####Heading 5 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a>
+######Heading 6 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></p>
+<p>##Headers (Underline)</p>
+<h1>H1 Header (Underline)</h1>
+<h2>H2 Header (Underline)</h2>
+<p>###Characters</p>
+<hr>
+<p><del>Strikethrough</del> Strikethrough (when enable html tag decode.)
+<em>Italic</em> <em>Italic</em>
+<strong>Emphasis</strong> <strong>Emphasis</strong>
+<strong><em>Emphasis Italic</em></strong> <strong><em>Emphasis Italic</em></strong></p>
+<p>Superscript: X2，Subscript: O2</p>
+<p><strong>Abbreviation(link HTML abbr tag)</strong></p>
+<p>The HTML specification is maintained by the W3C.</p>
+<p>###Blockquotes</p>
+<blockquote>
+<p>Blockquotes</p>
+</blockquote>
+<p>Paragraphs and Line Breaks</p>
+<blockquote>
+<p>"Blockquotes Blockquotes", <a href="http://localhost/">Link</a>。</p>
+</blockquote>
+<p>###Links</p>
+<p><a href="http://localhost/">Links</a></p>
+<p><a href="http://localhost/" title="link title">Links with title</a></p>
+<p><code>&#x3C;link></code> : <a href="https://github.com">https://github.com</a></p>
+<p><a href="http://link-url/">Reference link</a></p>
+<p>GFM a-tail link @pandao</p>
+<p>###Code Blocks (multi-language) &#x26; highlighting</p>
+<p>####Inline code</p>
+<p><code>$ npm install marked</code></p>
+<p>####Code Blocks (Indented style)</p>
+<p>Indented 4 spaces, like <code>&#x3C;pre></code> (Preformatted Text).</p>
+<pre><code>&#x3C;?php
+    echo "Hello world!";
+?>
+</code></pre>
+<p>Code Blocks (Preformatted text):</p>
+<pre><code>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</code></pre>
+<p>####Javascript</p>
+<pre><code class="language-javascript">function test() {
+  console.log("Hello world!");
+}
+
+(function () {
+  var box = function () {
+    return box.fn.init();
+  };
+
+  box.prototype = box.fn = {
+    init: function () {
+      console.log("box.init()");
+
+      return this;
+    },
+
+    add: function (str) {
+      alert("add", str);
+
+      return this;
+    },
+
+    remove: function (str) {
+      alert("remove", str);
+
+      return this;
+    },
+  };
+
+  box.fn.init.prototype = box.fn;
+
+  window.box = box;
+})();
+
+var testBox = box();
+testBox.add("jQuery").remove("jQuery");
+</code></pre>
+<p>####HTML code</p>
+<pre><code class="language-html">&#x3C;!DOCTYPE html>
+&#x3C;html>
+  &#x3C;head>
+    &#x3C;mate charest="utf-8" />
+    &#x3C;title>Hello world!&#x3C;/title>
+  &#x3C;/head>
+  &#x3C;body>
+    &#x3C;h1>Hello world!&#x3C;/h1>
+  &#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>###Images</p>
+<p>Image:</p>
+<p><img src="https://pandao.github.io/editor.md/examples/images/4.jpg" alt=""></p>
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+<p><img src="https://pandao.github.io/editor.md/examples/images/8.jpg" alt=""></p>
+<blockquote>
+<p>图为：厦门白城沙滩 Xiamen</p>
+</blockquote>
+<p>图片加链接 (Image + Link)：</p>
+<p><a href="https://pandao.github.io/editor.md/examples/images/7.jpg" title="李健首张专辑《似水流年》封面"><img src="https://pandao.github.io/editor.md/examples/images/7.jpg" alt=""></a></p>
+<blockquote>
+<p>图为：李健首张专辑《似水流年》封面</p>
+</blockquote>
+<hr>
+<p>###Lists</p>
+<p>####Unordered list (-)</p>
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+<p>####Unordered list (*)</p>
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+<p>####Unordered list (plus sign and nested)</p>
+<ul>
+<li>Item A</li>
+<li>Item B
+<ul>
+<li>Item B 1</li>
+<li>Item B 2</li>
+<li>Item B 3</li>
+</ul>
+</li>
+<li>Item C
+<ul>
+<li>Item C 1</li>
+<li>Item C 2</li>
+<li>Item C 3</li>
+</ul>
+</li>
+</ul>
+<p>####Ordered list</p>
+<ol>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ol>
+<hr>
+<p>###Tables</p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Function name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>help()</code></td>
+<td>Display the help window.</td>
+</tr>
+<tr>
+<td><code>destroy()</code></td>
+<td><strong>Destroy your computer!</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>####HTML entities</p>
+<p>© &#x26; ¨ ™ ¡ £
+&#x26; &#x3C; > ¥ € ® ± ¶ § ¦ ¯ « ·</p>
+<p>X² Y³ ¾ ¼ × ÷ »</p>
+<p>18ºC " '</p>
+<p>##Escaping for Special Characters</p>
+<p>*literal asterisks*</p>
+<p>##Markdown extras</p>
+<p>###GFM task list</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> GFM task list 1</li>
+<li class="task-list-item"><input type="checkbox" checked disabled> GFM task list 2</li>
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 3
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 3-1</li>
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 3-2</li>
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 3-3</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 4
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 4-1</li>
+<li class="task-list-item"><input type="checkbox" disabled> GFM task list 4-2</li>
+</ul>
+</li>
+</ul>
+<p>###Emoji mixed :smiley:</p>
+<blockquote>
+<p>Blockquotes :star:</p>
+</blockquote>
+<p>####GFM task lists &#x26; Emoji &#x26; fontAwesome icon emoji &#x26; editormd logo emoji :editormd-logo-5x:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> :smiley: @mentions, :smiley: #refs, <a href="">links</a>, <strong>formatting</strong>, and tags supported :editormd-logo:;</li>
+<li class="task-list-item"><input type="checkbox" checked disabled> list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;</li>
+<li class="task-list-item"><input type="checkbox" checked disabled> [ ] :smiley: this is a complete item :smiley:;</li>
+<li class="task-list-item"><input type="checkbox" disabled> []this is an incomplete item <a href="#">test link</a> :fa-star: @pandao;</li>
+<li class="task-list-item"><input type="checkbox" disabled> [ ]this is an incomplete item :fa-star: :fa-gear:;
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> :smiley: this is an incomplete item <a href="#">test link</a> :fa-star: :fa-gear:;</li>
+<li class="task-list-item"><input type="checkbox" disabled> :smiley: this is :fa-star: :fa-gear: an incomplete item <a href="#">test link</a>;</li>
+</ul>
+</li>
+</ul>
+<p>###TeX(LaTeX)</p>
+<p>$$E=mc^2$$</p>
+<p>Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。</p>
+<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
+<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
+<p>###FlowChart</p>
+<pre><code class="language-flow">st=>start: Login
+op=>operation: Login operation
+cond=>condition: Successful Yes or No?
+e=>end: To admin
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+</code></pre>
+<p>###Sequence Diagram</p>
+<pre><code class="language-seq">Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
+</code></pre>
+<p>###End</p>
+<p>###Comments</p>
+<hr>
+<p><del>Strikethrough</del> Strikethrough (when enable html tag decode.)
+<em>Italic</em> <em>Italic</em>
+<strong>Emphasis</strong> <strong>Emphasis</strong>
+<strong><em>Emphasis Italic</em></strong> <strong><em>Emphasis Italic</em></strong></p>
+<p>Superscript: X2，Subscript: O2</p>
+<p><strong>Abbreviation(link HTML abbr tag)</strong></p>
+<p>The HTML specification is maintained by the W3C.</p>
