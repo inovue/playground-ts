@@ -2,6 +2,7 @@
   "name": "playground-ts",
   "version": "1.0.0",
   "description": "[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/inovue/playground-ts)",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
@@ -16,7 +17,13 @@
   },
   "devDependencies": {
     "@types/node": "^16.18.61",
+    "rehype": "^13.0.1",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2",
+    "unified": "^11.0.4"
   }
 }
